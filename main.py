@@ -3,18 +3,17 @@ from time import sleep
 # Info about the person
 name = input("Hey, what's your name?\n")
 age = input("What about your age?\n")
-while not age.isdigit():
+while not age.isdigit(): # avoid error, but mostly insult person
     print("Danggg you can't even enter your age properly? Try again")
     age = input("What's your age?\n")
 age = int(age)
 sport = input("What's your favorite sport?\n").lower()
-
-# Number handling
 number = input("What's your favorite number?\n")
-while not number.isdigit():
+while not number.isdigit(): # avoid error, and insult person
     print("Your answers already suck and now you can't type a number properly? Try again.")
     number = input("What's your favorite number?\n")
 number = int(number)
+color = input("What's your favorite color?\n")
 
 
 # Name handling
@@ -27,7 +26,7 @@ if age <= myAge:
     print("You're a youngin, lil bro missed everything")
 else:
     print(f"Unc is {age}, were the dinosaurs scary?")
-sleep(2)
+sleep(3)
 
 # Favorite sport handling
 if sport == "soccer":
@@ -47,3 +46,47 @@ if number != 67:
     print("Why is your favorite number not 67?")
 else:
     print("W Favorite Number")
+
+sleep(3)
+
+# Color handling
+if color.lower() == "green":
+    print("Oh I wonder why? It's not like trees, grass, bushes, and just about everything around us is green.")
+elif color.lower() == "blue":
+    print("Common ahh color to like.")
+elif color.lower() == "orange":
+    print("Blue is better")
+else:
+    print("L color.")
+sleep(2)
+
+
+
+
+
+
+
+
+# Fun Art
+print(r"""
+$$\              $$$$$$\                                                                  
+$$ |            $$  __$$\                                                                 
+$$ |            $$ /  $$ |$$$$$$$\   $$$$$$$\ $$\  $$\  $$\  $$$$$$\   $$$$$$\   $$$$$$$\ 
+$$ |            $$$$$$$$ |$$  __$$\ $$  _____|$$ | $$ | $$ |$$  __$$\ $$  __$$\ $$  _____|
+$$ |            $$  __$$ |$$ |  $$ |\$$$$$$\  $$ | $$ | $$ |$$$$$$$$ |$$ |  \__|\$$$$$$\  
+$$ |            $$ |  $$ |$$ |  $$ | \____$$\ $$ | $$ | $$ |$$   ____|$$ |       \____$$\ 
+$$$$$$$$\       $$ |  $$ |$$ |  $$ |$$$$$$$  |\$$$$$\$$$$  |\$$$$$$$\ $$ |      $$$$$$$  |
+\________|      \__|  \__|\__|  \__|\_______/  \_____\____/  \_______|\__|      \_______/                                                      
+""")
+sleep(2)
+print(r"""
+  o   \o      
+ <|>   v\     
+ < >    <\    
+          \o  
+           |> 
+          //  
+  o     o/    
+ <|>   /v     
+ < >  />             
+""")
