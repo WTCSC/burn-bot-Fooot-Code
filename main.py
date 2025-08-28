@@ -14,7 +14,7 @@ while not number.isdigit(): # avoid error, and insult person
     number = input("What's your favorite number?\n")
 number = int(number)
 color = input("What's your favorite color?\n")
-
+gatorade = input("What is your favorite Gatorade?\n")
 
 # Name handling
 myAge = 16
@@ -36,7 +36,7 @@ elif sport == "football":
 elif sport == "baseball":
     print("Baseball's equivalent to watching paint dry. Guess you have a lot of patience")
 elif sport == "hockey":
-    print("You like Hockey? Your'e better off watching wrestling at that point.")
+    print("You like Hockey? You're better off watching wrestling at that point.")
 else:
     print("Never heard of that sport.")
 sleep(3)
@@ -58,10 +58,24 @@ elif color.lower() == "orange":
     print("Blue is better")
 else:
     print("L color.")
-sleep(2)
+sleep(3)
 
+# Gatorade handling
+gatoradeColors = [
+    "red",
+    "orange",
+    "yellow",
+    "blue",
+    "purple",
+    "light blue",
+    "green"
+]
 
-
+if gatorade.lower() in gatoradeColors:
+    print("Good Boy.")
+else:
+    print("Cringe ahh for saying the flavor of Gatorade instead of the color.")
+sleep(3)
 
 
 
